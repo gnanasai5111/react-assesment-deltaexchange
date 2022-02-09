@@ -1,0 +1,38 @@
+table,th,td{
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+table {
+  text-align: center;
+}
+
+
+
+table th,
+table td {
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-family: Arial;
+}
+
+table tr th:first-child,
+table td:first-child {
+  position: fixed;
+  width: 150px;
+  left: 5px;
+  z-index: 10;
+  background: #fff;
+}
+
+table tr th:first-child {
+  z-index: 11;
+  top: 7px;
+}
+
+table tr th {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: #fff;
+}
